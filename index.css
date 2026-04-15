@@ -97,10 +97,11 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 60px 100px;
+  padding: 120px 100px 60px 100px;
   gap: 60px;
   max-width: 1200px;
   margin: 0 auto;
+  scroll-margin-top: 100px;
 }
 
 .section2-left {
@@ -163,14 +164,16 @@ html, body {
 #section3{
   text-align: center;
   margin-top: 30px;
+  scroll-margin-top: 100px;
 }
 #section4{
   display: flex;
   justify-content: space-between;
-  padding: 60px 100px;
+  padding: 120px 100px 60px 100px;
   gap: 60px;
   max-width: 1200px;
   margin: 0 auto;
+  scroll-margin-top: 100px;
 }
 
 #section4 #left,
@@ -217,9 +220,10 @@ html, body {
 }
 
 #section5 {
-  padding: 60px 100px;
+  padding: 120px 100px 60px 100px;
   max-width: 1200px;
   margin: 0 auto;
+  scroll-margin-top: 100px;
 }
 
 .skills-container {
@@ -271,7 +275,8 @@ html, body {
 }
 #section6{
   background-color: #F5DF4E;
-  padding: 60px 100px;
+  padding: 120px 100px 60px 100px;
+  scroll-margin-top: 100px;
 }
 
 .contact-container {
