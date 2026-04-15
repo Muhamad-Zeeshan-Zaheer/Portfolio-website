@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://kit.fontawesome.com/d43c8925be.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <title>Muhammad Zeeshan Zaheer</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <header id="main-header">
+      <span>Muhammad Zeeshan Zaheer</span>
+        <input type="checkbox" id="menu-toggle">
+
+      <nav id="nav-items">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Resume</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Contact Me</a></li>
+      </nav>
+        <label for="menu-toggle" id="bars">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+    </header>
+
+    <section id="section1">
+      <div class="left">
+        <h1 id="web-developer-text">Hi, I'm Web developer</h1>
+        <span id="element"></span>
+        <h4>Based in Lahore, Pakistan</h4>
+        <script>
+          var typed = new Typed('#element', {
+            strings: ['Ruby on Rails Engineer', 'Sqa Enthusiast'],
+            typeSpeed: 50,
+            loop: true
+          });
+        </script> <br>
+        <a href="#">Download CV</a>
+      </div>
+      <div class="right">
+        <img src="images/developer.png" alt="developer">
+      </div>
+    </section>
+
+    <div class="heading">
+      <p class="aboutme">About Me</p>
+      <h3>Know me better</h3>
+    </div>
+
+    <section id="section2">
+      <div class="section2-left">
+        <p>Hi I'm <b>Muhammad Zeeshan Zaheer</b></p>
+        <p>I am a passionate Ruby on Rails developer with a strong foundation in software testing and quality assurance. My journey in tech began with a Computer Science degree, and I've since specialized in building robust web applications using Ruby on Rails. I bring a unique perspective to development, combining technical expertise with a critical eye for quality, having worked extensively in QA roles where I honed my ability to identify issues and ensure code reliability.
+        </p>
+      </div>
+
+      <div class="section2-right">
+        <div class="experience-circle">6</div>
+        <p>Months of Experience</p>
+      </div>
+    </section>
+
+    <section id="section3">
+      <p class="aboutme">Resume</p>
+      <h3>A summary of my resume </h3>
+    </section>
+
+    <section id="section4">
+      <div id="left">
+        <hr>
+        <h4>Education</h4>
+        <b>Bachelor of Science in Computer Science</b>
+        <p>COMSATS University Islamabad, Sahiwal Campus - CUI / 2019-2023</p>
+        <hr>
+      </div>
+      <div id="right">
+        <h4>Experience</h4>
+        <b>Ruby on Rails Developer</b>
+        <p>Stackworx</p>
+      </div>
+    </section>
+
+  </body>
+</html>
