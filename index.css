@@ -20,6 +20,117 @@
   box-sizing: border-box;
 }
 
+/* Page load transitions */
+body {
+  opacity: 0;
+  animation: pageLoad 1.5s ease-out 0.3s forwards;
+}
+
+@keyframes pageLoad {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Section transitions on page load */
+section {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: sectionAppear 1s ease-out forwards;
+}
+
+#section1 {
+  animation-delay: 0.5s;
+}
+
+#section2 {
+  animation-delay: 0.8s;
+}
+
+#section3 {
+  animation-delay: 1.1s;
+}
+
+#section4 {
+  animation-delay: 1.4s;
+}
+
+#section5 {
+  animation-delay: 1.7s;
+}
+
+#section6 {
+  animation-delay: 2s;
+}
+
+@keyframes sectionAppear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Heading transitions */
+.heading {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: headingAppear 0.8s ease-out forwards;
+}
+
+.heading:nth-of-type(1) {
+  animation-delay: 0.3s;
+}
+
+.heading:nth-of-type(2) {
+  animation-delay: 1.3s;
+}
+
+@keyframes headingAppear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Section hover transitions */
+section {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-soft);
+}
+
+/* Element transitions */
+.experience-circle {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-circle:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-medium);
+}
+
+.skill-item {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateX(8px);
+  background-color: rgba(59, 130, 246, 0.05);
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.contact-form-section {
+  transition: transform 0.3s ease;
+}
+
+.contact-form-section:hover {
+  transform: translateY(-2px);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -435,7 +546,7 @@ html, body {
   font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
-  align-self: flex-start;
+  align-self: flex-end;
   transition: all 0.3s ease;
   margin-top: 10px;
   box-shadow: var(--shadow-medium);
